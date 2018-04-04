@@ -1,0 +1,246 @@
+ ****** HSPICE -- L-2016.06-SP1 linux64 (Aug 24 2016) ******                    
+  Copyright (c) 1986 - 2018 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: /home/zyang/OPA_DIFF/Environments/result/amp.sp                   
+  Command line options: /home/zyang/hspice/hspice/linux64/hspice /home/zyang/OPA_DIFF/Environments/result/amp.sp -o /home/zyang/OPA_DIFF/output/
+ lic:  
+ lic: FLEXlm: v11.2.1 
+ lic: USER:   zyang                HOSTNAME: ubuntu 
+ lic: HOSTID: 000c298ea11a         PID:      5416 
+ lic: Using FLEXlm license file: 
+ lic: 27000@ubuntu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-dec-2020/2019.2019 
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@ubuntu 
+ lic:   
+  
+  
+  ******  Machine Information  ***********************************
+  CPU:
+  model name	: Intel(R) Core(TM) i7-4710MQ CPU @ 2.50GHz
+  cpu MHz	: 2494.290
+  
+  OS:
+  Linux version 4.13.0-37-generic (buildd@lcy01-amd64-012) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.9)) #42~16.04.1-Ubuntu SMP Wed Mar 7 16:03:28 UTC 2018
+
+  **warning** (/home/zyang/OPA_DIFF/Environments/result/amp.sp:14) Unknown option optlist. Check the option name again.
+  ******  Loading Files  *****************************************
+  Loading '/home/zyang/OPA_DIFF/Environments/result/amp.sp '
+  Loading '/home/zyang/hspice/hspice/hspice.ini '
+  Loading '/home/zyang/library/tsmc65gp_OA/models/hspice/crn65gplus_2d5_lk_v1d0.l '
+  Loading '/home/zyang/OPA_DIFF/Environments/param/outparameter '
+  Loading '/home/zyang/OPA_DIFF/Environments/param/inparameter '
+             
+ Warning:'Floating bulk' occurs 1 times
+ Summary of floating bulk:
+ -----------------------
+ |Node      |Device    |
+ |----------+----------|
+ |net4      |m0        |
+ -----------------------
+              
+ **info** set option symb=1 internally to help for convergence.
+ ******  Options set in the netlist  ****************************
+ fast    = 1         ingold  = 0         lis_new = 1         
+ measdg  = 10        measfile= 1         measou  = 1         
+ nomod   = 1         notop   = 1         nxx     = 1         
+ runlvl  = 6         
+ search  = /home/zyang/hspice/hspice/parts/ad
+  
+  
+  ******  Summary of possible problems in netlist  ***************
+  Negative resistor :      0
+  Negative capacitor:      0
+  Negative inductor :      0
+  Unconnected node  :      0
+  Dangling terminal :      0
+  Source loop       :      0
+  
+  ******  Circuit Statistics  ************************************
+  Voltage Sources     :       6
+  MOSFETs             :      11
+  Total # of Nodes    :      37
+  Total # of Elements :      17
+
+
+  
+  ******  Analysis Details  **************************************
+  dcop: begin dcop,  cpu clock=  8.50E-01                                       
+                                                  
+ **info** dc convergence successful at Newton-Raphson method 
+  dcop: end dcop,  cpu clock=  8.50E-01 peak memory=       247 mb  tot_iter=    
+   14                                             
+ 
+  AC Beginning
+  11.11% Elapsed Frequency: 6.31e+03meg Estimated Time Left: 0:00:06        
+  20.99% Elapsed Frequency: 3.98e+04meg Estimated Time Left: 0:00:03        
+  30.86% Elapsed Frequency: 2.51e+05meg Estimated Time Left: 0:00:01        
+  40.74% Elapsed Frequency: 1.58e+06meg Estimated Time Left: 0:00:01        
+  50.62% Elapsed Frequency: 1.00e+07meg Estimated Time Left: 0:00:00        
+  60.49% Elapsed Frequency: 6.31e+07meg Estimated Time Left: 0:00:00        
+  70.37% Elapsed Frequency: 3.98e+08meg Estimated Time Left: 0:00:00        
+  80.25% Elapsed Frequency: 2.51e+09meg Estimated Time Left: 0:00:00        
+  90.12% Elapsed Frequency: 1.58e+10meg Estimated Time Left: 0:00:00        
+  100.00% Elapsed Frequency: 1.00e+11meg Estimated Time Left: 0:00:00        
+  AC End
+ ******
+ ** generated for: hspiced
+
+ ****** ac analysis tnom=  25.000 temp=  25.000 ******
+ 
+  ******  Measured values for the netlist  ***********************
+ dcgain=-184.0556391342     at= 100.0000000000g
+             from=   1.0000000000k    to= 100.0000000000g
+
+          ***** job concluded
+ ******  
+ ** generated for: hspiced
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          14
+  ac analysis        0.00          81          81
+  readin             0.71
+  errchk             0.02
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        260.98 megabytes
+           total cpu time            0.74 seconds
+           total elapsed time        0.57 seconds
+           job started at     10:55:32 04/04/2018
+           job ended   at     10:55:33 04/04/2018
+
+
+  
+  
+  ******  Machine Information  ***********************************
+  CPU:
+  model name	: Intel(R) Core(TM) i7-4710MQ CPU @ 2.50GHz
+  cpu MHz	: 2494.290
+  
+  OS:
+  Linux version 4.13.0-37-generic (buildd@lcy01-amd64-012) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.9)) #42~16.04.1-Ubuntu SMP Wed Mar 7 16:03:28 UTC 2018
+
+  **warning** (/home/zyang/OPA_DIFF/Environments/result/amp.sp:14) Unknown option optlist. Check the option name again.
+  ******  Loading Files  *****************************************
+  Loading '/home/zyang/OPA_DIFF/Environments/result/amp.sp '
+  Loading '/home/zyang/hspice/hspice/hspice.ini '
+  Loading '/home/zyang/library/tsmc65gp_OA/models/hspice/crn65gplus_2d5_lk_v1d0.l '
+  Loading '/home/zyang/OPA_DIFF/Environments/param/outparameter '
+  Loading '/home/zyang/OPA_DIFF/Environments/param/inparameter '
+             
+ Warning:'Floating bulk' occurs 1 times
+ Summary of floating bulk:
+ -----------------------
+ |Node      |Device    |
+ |----------+----------|
+ |net4      |m0        |
+ -----------------------
+              
+ **info** set option symb=1 internally to help for convergence.
+ ******  Options set in the netlist  ****************************
+ fast    = 1         ingold  = 0         lis_new = 1         
+ measdg  = 10        measfile= 1         measou  = 1         
+ nomod   = 1         notop   = 1         nxx     = 1         
+ runlvl  = 6         
+ search  = /home/zyang/hspice/hspice/parts/ad
+  
+  ******  Analysis Details  **************************************
+  dcop: begin dcop,  cpu clock=  1.05E+00                                       
+                                                  
+ **info** dc convergence successful at Newton-Raphson method 
+  dcop: end dcop,  cpu clock=  1.05E+00 peak memory=       248 mb  tot_iter=    
+   14                                             
+ 
+  AC Beginning
+  1.23% Elapsed Frequency: 1.00e+03meg Estimated Time Left: 0:01:24        
+  11.11% Elapsed Frequency: 6.31e+03meg Estimated Time Left: 0:00:08        
+  20.99% Elapsed Frequency: 3.98e+04meg Estimated Time Left: 0:00:03        
+  30.86% Elapsed Frequency: 2.51e+05meg Estimated Time Left: 0:00:02        
+  40.74% Elapsed Frequency: 1.58e+06meg Estimated Time Left: 0:00:01        
+  50.62% Elapsed Frequency: 1.00e+07meg Estimated Time Left: 0:00:01        
+  60.49% Elapsed Frequency: 6.31e+07meg Estimated Time Left: 0:00:00        
+  70.37% Elapsed Frequency: 3.98e+08meg Estimated Time Left: 0:00:00        
+  80.25% Elapsed Frequency: 2.51e+09meg Estimated Time Left: 0:00:00        
+  90.12% Elapsed Frequency: 1.58e+10meg Estimated Time Left: 0:00:00        
+  100.00% Elapsed Frequency: 1.00e+11meg Estimated Time Left: 0:00:00        
+  AC End
+ ******
+ ** generated for: hspiced
+
+ ****** ac analysis tnom=  25.000 temp=  25.000 ******
+ 
+  ******  Measured values for the netlist  ***********************
+ dcgain=-184.0554693625     at= 100.0000000000g
+             from=   1.0000000000k    to= 100.0000000000g
+
+          ***** job concluded
+ ******  
+ ** generated for: hspiced
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          14
+  ac analysis        0.00          81          81
+  readin             0.17
+  errchk             0.02
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        264.46 megabytes
+           total cpu time            0.19 seconds
+           total elapsed time        0.11 seconds
+           job started at     10:55:32 04/04/2018
+           job ended   at     10:55:33 04/04/2018
+
+
+ **error** stop simulation by signal SIGINT = 2
+
+ ******  
+ ** generated for: hspiced
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  ac analysis        0.00          81           0
+  readin             0.00
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        264.46 megabytes
+           total cpu time            0.04 seconds
+           total elapsed time        0.03 seconds
+           job started at     10:55:32 04/04/2018
+           job ended   at     10:55:33 04/04/2018
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.14(s)

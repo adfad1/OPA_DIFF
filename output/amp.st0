@@ -1,0 +1,115 @@
+****** HSPICE -- L-2016.06-SP1 linux64 (Aug 24 2016) ******
+ Input File: /home/zyang/OPA_DIFF/Environments/result/amp.sp
+ lic:
+ lic: FLEXlm: v11.2.1
+ lic: USER:   zyang                HOSTNAME: ubuntu
+ lic: HOSTID: 000c298ea11a         PID:      5416
+ lic: Using FLEXlm license file:
+ lic: 27000@ubuntu
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 30-dec-2020/2019.2019
+ lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@ubuntu
+ lic:
+ init: begin read circuit files,  cpu clock=  8.00E-01
+       option search = /home/zyang/hspice/hspice/parts/ad
+       option search = /home/zyang/hspice/hspice/parts/behave
+       option search = /home/zyang/hspice/hspice/parts/bjt
+       option search = /home/zyang/hspice/hspice/parts/burr_brn
+       option search = /home/zyang/hspice/hspice/parts/comlinear
+       option search = /home/zyang/hspice/hspice/parts/dio
+       option search = /home/zyang/hspice/hspice/parts/fet
+       option search = /home/zyang/hspice/hspice/parts/lin_tech
+       option search = /home/zyang/hspice/hspice/parts/pci
+       option search = /home/zyang/hspice/hspice/parts/signet
+       option search = /home/zyang/hspice/hspice/parts/ti
+       option search = /home/zyang/hspice/hspice/parts/tline
+       option search = /home/zyang/hspice/hspice/parts/xilinx
+       option runlvl
+       option optlist =     3.00
+       option nomod =     1.00
+       option brief =     1.00
+       option ingold =     0.00
+       option runlvl =     6.00
+       option measout =     1.00
+       option measdgt =     10.0
+       option notop =     1.00
+       option nxx =     1.00
+       option fast =     1.00
+       option lis_new =     1.00
+       option measfile =     1.00
+ init: end read circuit files,  cpu clock=  8.30E-01 peak memory=       247 mb
+ init: begin check errors,  cpu clock=  8.30E-01
+ init: end check errors,  cpu clock=  8.50E-01 peak memory=       247 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  8.50E-01
+       establish matrix -- done,  cpu clock=  8.50E-01 peak memory=       247 mb
+       re-order matrix -- done,  cpu clock=  8.50E-01 peak memory=       247 mb
+ init: end setup matrix,  cpu clock=  8.50E-01 peak memory=       247 mb
+ dcop: begin dcop,  cpu clock=  8.50E-01
+ dcop: end dcop,  cpu clock=  8.50E-01 peak memory=       247 mb  tot_iter=      14
+ sweep: ac ac0    begin, #sweeps=  81 cpu clock=  8.50E-01
+ ac: frequency=1.00e+03
+ ac: frequency=6.31e+03
+ ac: frequency=3.98e+04
+ ac: frequency=2.51e+05
+ ac: frequency=1.58e+06
+ ac: frequency=1.00e+07
+ ac: frequency=6.31e+07
+ ac: frequency=3.98e+08
+ ac: frequency=2.51e+09
+ ac: frequency=1.58e+10
+ ac: frequency=1.00e+11
+ sweep: ac ac0    end,  cpu clock=  8.50E-01 peak memory=       247 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files,  cpu clock=  1.00E+00
+       option search = /home/zyang/hspice/hspice/parts/ad
+       option search = /home/zyang/hspice/hspice/parts/behave
+       option search = /home/zyang/hspice/hspice/parts/bjt
+       option search = /home/zyang/hspice/hspice/parts/burr_brn
+       option search = /home/zyang/hspice/hspice/parts/comlinear
+       option search = /home/zyang/hspice/hspice/parts/dio
+       option search = /home/zyang/hspice/hspice/parts/fet
+       option search = /home/zyang/hspice/hspice/parts/lin_tech
+       option search = /home/zyang/hspice/hspice/parts/pci
+       option search = /home/zyang/hspice/hspice/parts/signet
+       option search = /home/zyang/hspice/hspice/parts/ti
+       option search = /home/zyang/hspice/hspice/parts/tline
+       option search = /home/zyang/hspice/hspice/parts/xilinx
+       option runlvl
+       option optlist =     3.00
+       option nomod =     1.00
+       option brief =     1.00
+       option ingold =     0.00
+       option runlvl =     6.00
+       option measout =     1.00
+       option measdgt =     10.0
+       option notop =     1.00
+       option nxx =     1.00
+       option fast =     1.00
+       option lis_new =     1.00
+       option measfile =     1.00
+ init: end read circuit files,  cpu clock=  1.03E+00 peak memory=       247 mb
+ init: begin check errors,  cpu clock=  1.03E+00
+ init: end check errors,  cpu clock=  1.05E+00 peak memory=       248 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.05E+00
+       establish matrix -- done,  cpu clock=  1.05E+00 peak memory=       248 mb
+       re-order matrix -- done,  cpu clock=  1.05E+00 peak memory=       248 mb
+ init: end setup matrix,  cpu clock=  1.05E+00 peak memory=       248 mb
+ dcop: begin dcop,  cpu clock=  1.05E+00
+ dcop: end dcop,  cpu clock=  1.05E+00 peak memory=       248 mb  tot_iter=      14
+ sweep: ac ac0    begin, #sweeps=  81 cpu clock=  1.05E+00
+ ac: frequency=1.00e+03
+ ac: frequency=6.31e+03
+ ac: frequency=3.98e+04
+ ac: frequency=2.51e+05
+ ac: frequency=1.58e+06
+ ac: frequency=1.00e+07
+ ac: frequency=6.31e+07
+ ac: frequency=3.98e+08
+ ac: frequency=2.51e+09
+ ac: frequency=1.58e+10
+ ac: frequency=1.00e+11
+ sweep: ac ac0    end,  cpu clock=  1.05E+00 peak memory=       248 mb
+>info:         ***** hspice job concluded
+ **error** stop simulation by signal SIGINT = 2
+
+ lic: Release hspice token(s)

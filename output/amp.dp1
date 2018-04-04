@@ -1,0 +1,365 @@
+ ****** HSPICE -- L-2016.06-SP1 linux64 (Aug 24 2016) ******                    
+ ******  
+ ** generated for: hspiced
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is     0.     
+     node    =voltage
+ net15=   1.5472       
+ net16=   1.5472       
+ net18=   1.8000       
+ net19=   1.8000       
+ net3=   1.6296       
+ net4=   1.6518       
+ vb0=   1.0000       
+ vb1= 650.0000m      
+ vb2=   1.0000       
+ vb3= 650.0000m      
+ vdd!=   1.8000       
+ vip= 650.0000m      
+ vout1=   1.8000       
+ vout2=   1.8000       
+
+ **** voltage sources
+
+subckt                      
+ element v0                  
+  volts      1.8000 
+  current   -3.2696u
+  power      5.8853u
+
+subckt                      
+ element v1                  
+  volts    650.0000m
+  current    0.     
+  power      0.     
+
+subckt                      
+ element v10                 
+  volts    650.0000m
+  current    0.     
+  power      0.     
+
+subckt                      
+ element v7                  
+  volts      1.0000 
+  current    0.     
+  power      0.     
+
+subckt                      
+ element v8                  
+  volts    650.0000m
+  current    0.     
+  power      0.     
+
+subckt                      
+ element v9                  
+  volts      1.0000 
+  current    0.     
+  power      0.     
+
+     total voltage source power dissipation=    5.8853u       watts
+
+
+
+
+ **** mosfets
+
+
+subckt                      
+ element m3                  
+ model   pch_25.8            
+ region       Linear
+  id        -1.8000p
+  ibs      4.291e-23
+  ibd      1.510e-19
+  vgs     -799.9990m
+  vds     -147.9130n
+  vbs        0.     
+  vth     -611.8964m
+  vdsat   -187.9714m
+  vod     -188.1026m
+  beta      68.1599u
+  gam eff  781.2000m
+  gm         9.1946p
+  gds       12.1761u
+  gmb        3.2326p
+  cdtot      6.3310f
+  cgtot      4.9425f
+  cstot      5.3110f
+  cbtot      3.0488f
+  cgs        1.6543f
+  cgd        2.6507f
+
+
+
+subckt                      
+ element m5                  
+ model   pch_25.8            
+ region       Linear
+  id        -1.8000p
+  ibs      4.291e-23
+  ibd      1.510e-19
+  vgs     -799.9990m
+  vds     -147.9130n
+  vbs        0.     
+  vth     -611.8964m
+  vdsat   -187.9714m
+  vod     -188.1026m
+  beta      68.1599u
+  gam eff  781.2000m
+  gm         9.1946p
+  gds       12.1761u
+  gmb        3.2326p
+  cdtot      6.3310f
+  cgtot      4.9425f
+  cstot      5.3110f
+  cbtot      3.0488f
+  cgs        1.6543f
+  cgd        2.6507f
+
+
+
+subckt                      
+ element m0                  
+ model   pch_25.8            
+ region       Linear
+  id        -1.6348u
+  ibs       22.6520f
+  ibd      106.6627f
+  vgs     -979.6252m
+  vds      -82.4598m
+  vbs       22.1511m
+  vth     -619.0712m
+  vdsat   -323.5976m
+  vod     -360.5541m
+  beta      65.7215u
+  gam eff  781.2000m
+  gm         4.9255u
+  gds       16.9196u
+  gmb        1.7428u
+  cdtot      5.1483f
+  cgtot      5.3990f
+  cstot      5.6019f
+  cbtot      2.9659f
+  cgs        2.7507f
+  cgd        2.1742f
+
+
+
+subckt                      
+ element m2                  
+ model   pch_25.8            
+ region       Linear
+  id        -3.2696u
+  ibs     -303.7775f
+  ibd       45.1481f
+  vgs     -799.9990m
+  vds     -170.3748m
+  vbs     -148.2237m
+  vth     -560.6569m
+  vdsat   -220.6882m
+  vod     -239.3421m
+  beta     137.6209u
+  gam eff  781.2000m
+  gm        20.1687u
+  gds        7.6082u
+  gmb        7.4391u
+  cdtot      3.2375f
+  cgtot      9.0277f
+  cstot      9.6704f
+  cbtot      6.1160f
+  cgs        6.1283f
+  cgd        1.3520f
+
+
+
+subckt                      
+ element m4                  
+ model   pch_25.8            
+ region       Linear
+  id        -1.8000p
+  ibs      1.511e-19
+  ibd      2.064e-19
+  vgs       -1.1500 
+  vds      -54.2974n
+  vbs      147.9130n
+  vth     -611.8964m
+  vdsat   -462.5937m
+  vod     -538.1034m
+  beta      63.6324u
+  gam eff  781.2000m
+  gm         3.0466p
+  gds       33.2021u
+  gmb        1.2193p
+  cdtot      6.9531f
+  cgtot      5.7748f
+  cstot      6.2369f
+  cbtot      3.1061f
+  cgs        2.5059f
+  cgd        2.9106f
+
+
+
+subckt                      
+ element m6                  
+ model   pch_25.8            
+ region       Linear
+  id        -1.8000p
+  ibs      1.511e-19
+  ibd      2.064e-19
+  vgs       -1.1500 
+  vds      -54.2974n
+  vbs      147.9130n
+  vth     -611.8964m
+  vdsat   -462.5937m
+  vod     -538.1034m
+  beta      63.6324u
+  gam eff  781.2000m
+  gm         3.0466p
+  gds       33.2021u
+  gmb        1.2193p
+  cdtot      6.9531f
+  cgtot      5.7748f
+  cstot      6.2369f
+  cbtot      3.1061f
+  cgs        2.5059f
+  cgd        2.9106f
+
+
+
+subckt                      
+ element m1                  
+ model   pch_25.8            
+ region       Linear
+  id        -1.6348u
+  ibs       22.6520f
+  ibd      106.6627f
+  vgs     -979.6252m
+  vds      -82.4598m
+  vbs       22.1511m
+  vth     -619.0712m
+  vdsat   -323.5976m
+  vod     -360.5541m
+  beta      65.7215u
+  gam eff  781.2000m
+  gm         4.9255u
+  gds       16.9196u
+  gmb        1.7428u
+  cdtot      5.1483f
+  cgtot      5.3990f
+  cstot      5.6019f
+  cbtot      2.9659f
+  cgs        2.7507f
+  cgd        2.1742f
+
+
+
+subckt                      
+ element m7                  
+ model   nch_25.18           
+ region       Cutoff
+  id       2.317e-25
+  ibs       -1.5472p
+  ibd       -1.8000p
+  vgs     -547.1654m
+  vds      252.8344m
+  vbs       -1.5472 
+  vth      895.5190m
+  vdsat     48.4292m
+  vod       -1.4427 
+  beta     109.2327u
+  gam eff  396.9000m
+  gm       6.947e-24
+  gds      1.491e-25
+  gmb      1.407e-24
+  cdtot    355.4344a
+  cgtot    652.7183a
+  cstot    371.7888a
+  cbtot    888.4667a
+  cgs      127.7978a
+  cgd      117.9768a
+
+
+
+subckt                      
+ element m9                  
+ model   nch_25.18           
+ region     Saturati
+  id         1.6348u
+  ibs     -169.7360a
+  ibd       -3.0942p
+  vgs      650.0000m
+  vds        1.5472 
+  vbs        0.     
+  vth      562.4602m
+  vdsat    130.4174m
+  vod       87.5398m
+  beta     217.7023u
+  gam eff  396.9000m
+  gm        19.4589u
+  gds       35.1724n
+  gmb        4.9648u
+  cdtot    718.8776a
+  cgtot      4.1390f
+  cstot      4.7103f
+  cbtot      2.2170f
+  cgs        3.6204f
+  cgd      229.9793a
+
+
+
+subckt                      
+ element m8                  
+ model   nch_25.18           
+ region       Cutoff
+  id       2.317e-25
+  ibs       -1.5472p
+  ibd       -1.8000p
+  vgs     -547.1654m
+  vds      252.8344m
+  vbs       -1.5472 
+  vth      895.5190m
+  vdsat     48.4292m
+  vod       -1.4427 
+  beta     109.2327u
+  gam eff  396.9000m
+  gm       6.947e-24
+  gds      1.491e-25
+  gmb      1.407e-24
+  cdtot    355.4344a
+  cgtot    652.7183a
+  cstot    371.7888a
+  cbtot    888.4667a
+  cgs      127.7978a
+  cgd      117.9768a
+
+
+
+subckt                      
+ element m10                 
+ model   nch_25.18           
+ region     Saturati
+  id         1.6348u
+  ibs     -169.7360a
+  ibd       -3.0942p
+  vgs      650.0000m
+  vds        1.5472 
+  vbs        0.     
+  vth      562.4602m
+  vdsat    130.4174m
+  vod       87.5398m
+  beta     217.7023u
+  gam eff  396.9000m
+  gm        19.4589u
+  gds       35.1724n
+  gmb        4.9648u
+  cdtot    718.8776a
+  cgtot      4.1390f
+  cstot      4.7103f
+  cbtot      2.2170f
+  cgs        3.6204f
+  cgd      229.9793a
+
+
+
