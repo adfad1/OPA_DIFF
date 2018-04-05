@@ -247,5 +247,6 @@ class BaseEnv(Env):
       self.reward /= self.init_loss
 
     self.info['vtrue'].append(self.loss)
+    print('reward:',self.reward)
     return observation, self.reward, done, self.info
 
