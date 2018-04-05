@@ -1,5 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='L-2016.06-SP1 linux64' PARAM_COUNT=0
-.TITLE '** generated for: hspiced'
- dcgain           temper           alter#          
- -184.0556391342    25.0000000000  1               
- -184.0554693625    25.0000000000  2               
