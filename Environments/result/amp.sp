@@ -25,7 +25,7 @@
 + lis_new = 1
 + measfile = 1
 
-.inc '/home/zyang/OPA_DIFF/Environments/result/hspice.mdl'
+.inc '/home/zhouyang/OPA_DIFF/Environments/result/hspice.mdl'
 ** Library name: bandgap_1
 ** Cell name: amp_1_1
 ** View name: schematic
@@ -52,7 +52,7 @@ v0 vdd! 0 DC=1.8
 
 
 * Simulation
-.inc "/home/zyang/OPA_DIFF/Environments/param/outparameter"
-.inc "/home/zyang/OPA_DIFF/Environments/param/inparameter"
+.inc "/home/zhouyang/OPA_DIFF/Environments/param/outparameter"
+.inc "/home/zhouyang/OPA_DIFF/Environments/param/inparameter"
 *.sweep vb1 0.1v 0.0005v 1.8v
 .END
