@@ -91,4 +91,6 @@ cnn_config={
   'num_hid_layers': 2,
 }
 
-
+file_path={
+  'reward':'/home/%s/OPA_DIFF/logfile/reward'%user
+}

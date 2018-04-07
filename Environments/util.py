@@ -1,6 +1,6 @@
 import numpy as np
 import re
-from hyperparams import delta_bias, delta_w, EPS,param_path
+from hyperparams import delta_bias, delta_w, EPS,param_path,user,file_path
 
 
 
@@ -18,6 +18,16 @@ def update_parameter(filename, params):
 
 def grad_normalize(grad):
   return grad
+
+def log_file(name,value,plot=False):
+  if name not in file_path.keys():
+    file_path[name] = '/home/%s/OPA_DIFF/logfile/%s'%(user,name)
+  f = open(file_path[name],'a')
+  print(value,file=f)
+  f.close()
+  if plot is True:
+    print(name,':',value)
+  
 
 class OptElement(object):
   def __init__(self, _min, _max, threshold=None, positive=False):

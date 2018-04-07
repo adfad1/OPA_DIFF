@@ -19,17 +19,15 @@ def add(y):
         y2.append(_y)
     return  y2
 
-location = "/home/zyang/OPA_DIFF/rew_mean.txt"
+location = "/home/zyang/OPA_DIFF/logfile/reward"
 y1 = exchange(location)
-y1 = add(y1)
+#y1 = add(y1)
 '''
-location = "/home/zyang/OPA_DIFF/r0_vb0/reward.txt"
-y2 = exchange(location)
 location = "/home/zyang/OPA_DIFF/r0_vb0/loss.txt"
 y3 = exchange(location)
 '''
 #plt.subplot(311)
-plt.plot(y1,label=' reward_mean')
+plt.plot(y1,label=' reward')
 plt.xlabel('episode')
 plt.ylabel('reward')
 plt.legend()
