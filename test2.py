@@ -31,7 +31,7 @@ def main():
     EnvModule = importlib.import_module(env_id)
     env = getattr(EnvModule, env_id)(**env_config)
 
-    train(env, num_timesteps=1000, seed = 0)
+    train(env, num_timesteps=10000, seed = 0)
 
 if __name__ == '__main__':
     main()

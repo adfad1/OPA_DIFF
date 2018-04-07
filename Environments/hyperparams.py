@@ -4,7 +4,7 @@ import numpy as np
 
 env_id = 'OPA'
 
-model_dir = 'model'
+model_dir = '/home/%s/OPA_DIFF/model'%user
 param_path = '/home/%s/OPA_DIFF/Environments/param/'%user
 
 H = 16

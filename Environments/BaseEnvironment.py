@@ -90,6 +90,8 @@ class BaseEnv(Env):
     
     self.cross_bound = np.zeros([nb_status, ])
 
+    clear_logfile()
+
     self.reset(status)
 
   def seed(self, seed=None):

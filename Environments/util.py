@@ -1,5 +1,6 @@
 import numpy as np
 import re
+import os
 from hyperparams import delta_bias, delta_w, EPS,param_path,user,file_path
 
 
@@ -18,6 +19,11 @@ def update_parameter(filename, params):
 
 def grad_normalize(grad):
   return grad
+
+def clear_logfile():
+  for key in file_path.keys():
+    if os.path.exists(file_path[key]):
+      os.remove(file_path[key])
 
 def log_file(name,value,plot=False):
   if name not in file_path.keys():
