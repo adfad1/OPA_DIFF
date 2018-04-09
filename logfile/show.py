@@ -14,14 +14,20 @@ def exchange(f):
 def add(y):
     y2 = []
     _y = 0
+    j = 0
     for i,p in enumerate(y):
         _y += p
-        y2.append(_y)
+        j += 1
+        if(j>=15):
+            _y = _y/16
+            y2.append(_y)
+            _y = 0
+            j = 0
     return  y2
 
 location = "/home/zyang/OPA_DIFF/logfile/reward"
 y1 = exchange(location)
-#y1 = add(y1)
+y1 = add(y1)
 '''
 location = "/home/zyang/OPA_DIFF/r0_vb0/loss.txt"
 y3 = exchange(location)

@@ -89,8 +89,10 @@ mlp_config={
 cnn_config={
   'hid_size': 64,
   'num_hid_layers': 2,
+  'load':False
 }
 
 file_path={
-  'reward':'/home/%s/OPA_DIFF/logfile/reward'%user
+  'reward':'/home/%s/OPA_DIFF/logfile/reward'%user,
+  'rew_mean':'/home/%s/OPA_DIFF/logfile/rew_mean'%user
 }

@@ -3,15 +3,17 @@ import tensorflow as tf
 import gym
 import re
 import os, sys
-from baselines.hyperparams import *
+from hyperparams import *
 from baselines.common.distributions import make_pdtype
 
 class CnnPolicy(object):
     recurrent = False
-    def __init__(self, name, ob_space, ac_space, hid_size=32, num_hid_layers=2, kind='large'):
+    def __init__(self, name, ob_space, ac_space, hid_size=32, num_hid_layers=2, load=False, kind='large'):
         with tf.variable_scope(name):
             self._init(ob_space, ac_space, hid_size, num_hid_layers, kind)
             self.scope = tf.get_variable_scope().name
+        if (load):
+            self.load(model_dir)
 
     def _init(self, ob_space, ac_space, hid_size=32, num_hid_layers=2, kind='large'):
         assert isinstance(ob_space, gym.spaces.Box)

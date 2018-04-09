@@ -8,6 +8,7 @@ from baselines.common.mpi_moments import mpi_moments
 from mpi4py import MPI
 from collections import deque
 from hyperparams import *
+from util import log_file
 
 def traj_segment_generator(pi, env, horizon, stochastic):
     t = 0
@@ -213,6 +214,7 @@ def learn(env, policy_fn, *,
             rewbuffer.extend(rews)
             logger.record_tabular("EpLenMean", np.mean(lenbuffer))
             logger.record_tabular("EpRewMean", np.mean(rewbuffer))
+            log_file('rew_mean',np.mean(rewbuffer))
             logger.record_tabular("EpThisIter", len(lens))
             episodes_so_far += len(lens)
             timesteps_so_far += sum(lens)
