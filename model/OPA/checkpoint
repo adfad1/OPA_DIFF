@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/zhouyang/OPA_DIFF/model/OPA/model.ckpt-11984"
+all_model_checkpoint_paths: "/home/zhouyang/OPA_DIFF/model/OPA/model.ckpt-11984"
